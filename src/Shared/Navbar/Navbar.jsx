@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-blue-500 p-4">
-            <div className="container mx-auto flex items-center justify-between">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
                 <div className="text-white text-3xl font-bold uppercase">
                     <Link to="/"  >School</Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
                         </span>
                         {/* Dropdown Menu */}
                         {isServicesOpen && (
-                            <div className="absolute w-96 top-full left-0 bg-blue-500 shadow-xl rounded-lg text-white py-2 mt-2 space-y-2">
+                            <div className="absolute w-96 top-full left-0 bg-blue-600 shadow-xl rounded-lg text-white py-2 mt-2 space-y-2">
                                 <Link to="/" className="block px-4 py-2 hover:text-gray-300">
                                     শিক্ষক শিক্ষিকার তথ্য
                                 </Link>
@@ -95,21 +95,21 @@ const Navbar = () => {
                     {/* End of Dropdown */}
 
                     <Link to="/" className="text-white hover:text-gray-300">
-                        পাঠ্যসূচী(রুটিন)
+                        পাঠ্যসূচী( রুটিন )
                     </Link>
 
 
                     <Link to="/" className="text-white hover:text-gray-300">
                         ই-লাইব্রেরী
                     </Link>
-                    <Link to="/" className="text-white hover:text-gray-300">
+                    <Link to="/contact" className="text-white hover:text-gray-300">
                         যোগাযোগ
                     </Link>
                 </div>
 
                 {/* Mobile Menu */}
                 <div
-                    className={`lg:hidden absolute top-[61px] left-0  w-full bg-blue-500  transform origin-top transition-transform ${isOpen ? 'scale-y-100' : 'scale-y-0'
+                    className={`lg:hidden absolute top-[61px] left-0  w-full bg-blue-600  transform origin-top transition-transform ${isOpen ? 'scale-y-100' : 'scale-y-0'
                         }`}
                 >
                     <Link to="/" className="block px-4 py-2 text-white hover:text-gray-300" >
